@@ -11,14 +11,15 @@ It is a discussion forum designed for the students of IIITA to ask questions, sh
 
 ## Getting Started
 ### Get the Dependencies
-npm i
+'npm i'
 ### Run the development server:
-npm run dev
-# or
-yarn dev
+'npm run dev'
+or
+'yarn dev'
 Open http://localhost:3000 with your browser to see the result.
 
 You can start editing the page by modifying pages/index.js. The page auto-updates as you edit the file.
+
 
 API routes can be accessed on http://localhost:3000/api/hello. This endpoint can be edited in pages/api/hello.js.
 
