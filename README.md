@@ -11,11 +11,11 @@ It is a discussion forum designed for the students of IIITA to ask questions, sh
 
 ## Getting Started
 ### Get the Dependencies
-'npm i'
+`npm i`
 ### Run the development server:
-'npm run dev'
+`npm run dev`
 or
-'yarn dev'
+`yarn dev`
 Open http://localhost:3000 with your browser to see the result.
 
 You can start editing the page by modifying pages/index.js. The page auto-updates as you edit the file.
