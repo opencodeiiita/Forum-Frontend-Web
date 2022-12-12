@@ -23,12 +23,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying [pages/index.js](pages/index.js). The page auto-updates as you edit the file.
 
 
-API routes can be accessed on [http://localhost:3000/api/hello](http://localhost:3000). This endpoint can be edited in pages/api/hello.js.
+API routes can be accessed on [http://localhost:3000/api/hello](http://localhost:3000). This endpoint can be edited in `pages/api/hello.js`.
 
-The pages/api directory is mapped to /api/*. Files in this directory are treated as API routes instead of React pages.
+The `pages/api` directory is mapped to `/api/`. Files in this directory are treated as API routes instead of React pages.
 
 ## Learn More
-To learn more about Next.js, take a look at the following resources:
+To learn more about React.js, take a look at the following resources:
 
 [React.js Documentation](https://reactjs.org/docs/getting-started.html)- learn about Next.js features and API.
 
