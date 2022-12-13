@@ -1,10 +1,10 @@
 # Forum-Frontend-Web 🕸️
 This is the frontend of the Forum Web App. It is a discussion forum designed for the students of IIITA to ask questions, share their experiences and to know what their peeps are up to.
----
+
 ## Built With 🛠️
 - [React.js](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
----
+
 ## Contribution Guidelines ⚖️
 1. Claim Issues: It doesn't matter whether you know how to solve it. Don't look out for issues you know how to solve, but rather ones you don't know how to solve! This      will be your opening door to learning something new. 💪
 2. Issues will be assigned on a first come first serve basis. Decision of the mentor prevails while assigning issues to encourage participation. If you want to solve an    issue, comment “I want to work on this issue/ Please assign this issue to me” after which the issue will be assigned by the mentor. ✍️
@@ -34,7 +34,7 @@ The `pages/api` directory is mapped to `/api/`. Files in this directory are trea
 ## Learn More
 To learn more about React.js, take a look at the following resources:
 
-[React.js Documentation](https://reactjs.org/docs/getting-started.html)- learn about Next.js features and API.
+[React.js Documentation](https://reactjs.org/docs/getting-started.html)- learn about React.js features and API.
 
 [Learn React.js](https://reactjs.org/docs/react-api.html) - an interactive React.js tutorial.
 
