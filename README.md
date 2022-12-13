@@ -1,5 +1,9 @@
 # Forum-Frontend-Web 🕸️
-It is a discussion forum designed for the students of IIITA to ask questions, share their experiences and to know what their peeps are up to.
+This is the frontend of the Forum Web App. It is a discussion forum designed for the students of IIITA to ask questions, share their experiences and to know what their peeps are up to.
+---
+## Built With 🛠️
+- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 ---
 ## Contribution Guidelines ⚖️
 1. Claim Issues: It doesn't matter whether you know how to solve it. Don't look out for issues you know how to solve, but rather ones you don't know how to solve! This      will be your opening door to learning something new. 💪
@@ -11,11 +15,11 @@ It is a discussion forum designed for the students of IIITA to ask questions, sh
 
 ## Getting Started
 ### Get the Dependencies
-`npm i`
+`npm install`
 ### Run the development server:
-`npm run dev`
+`npm run start`
 or
-`yarn dev`
+`yarn start`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
