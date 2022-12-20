@@ -1,0 +1,4 @@
+github username : TheDivineAurora
+figma link : https://www.figma.com/file/WTIbRw7OCkAy4rpUIyiVAA/Website?t=gDBYActV9yKnbDaJ-6
+
+figma run link : https://www.figma.com/proto/WTIbRw7OCkAy4rpUIyiVAA/Website?node-id=1%3A3&scaling=min-zoom&page-id=0%3A1
