@@ -19,9 +19,7 @@ function App() {
       </Routes>
     </BrowserRouter>
 
-      <h1 className="text-3xl font-bold underline text-center mt-5">Forum!</h1>
-      <Signup/>
-      
+     <Hero/>
     </>
   );
 }
