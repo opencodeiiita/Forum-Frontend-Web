@@ -1,10 +1,10 @@
 import React from "react";
-import Signup from "./pages/signup/index";
+// import Signup from "./pages/signup/index";
+import Hero from "./components/hero-section";
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-center">Forum!</h1>
-      <Signup/>
+      <Hero/>
     </>
   );
 }
