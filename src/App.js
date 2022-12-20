@@ -5,12 +5,13 @@ import Signup from "./pages/signup/index";
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Hero from './components/hero-section';
 
 
 function App() {
   return (
 <>
-<Navbar />
+{/* <Navbar /> */}
     <BrowserRouter>
      <Routes>
         <Route exact path='/Home' element={<Home />} />
