@@ -1,5 +1,5 @@
 import image from './forumimage.png';
-export default ()=>{
+export default function Hero(){
     return (
         <>
         <div className="ellipse"> </div>
