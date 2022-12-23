@@ -10,7 +10,7 @@ export default function Navbar() {
       <img src={logo} alt="Logo" className="scale-125" />
     </div>
     <div className="w-[30%] flex lg:flex lg:items-center justify-between mr-3">
-      
+
         <a href="#home" className="block text-xl mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-400 mr-4">
           Home
         </a>
