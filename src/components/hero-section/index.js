@@ -5,15 +5,10 @@ export default function Hero(){
         <div className="ellipse"> </div>
         <div className="tag-line-1">Now communicate</div>
         <div className="tag-line-2">with others easily</div>
-        <div className="logo">Forum</div>
+       
         <div className="ellipse2"></div>
-        <button className="contact">Contact</button>
-        <div className="navbar">
-            <div className="navitem">Home</div>
-            <div className="navitem">Features</div>
-            <div className="navitem">About</div>
-            <div className="navitem">Support</div>
-        </div>
+        
+        
         <div className="tag2">
         Simplified and easy way of communication
         now just one click away
