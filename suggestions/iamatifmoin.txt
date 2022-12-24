@@ -1,0 +1,11 @@
+Topic for suggestions(e.g Theme, color palette, features, Font style, etc..)
+
+1. Color Palette --> 
+Light Mode- #82AAE3,#91D8E4,#BFEAF5,#EAFDFC
+Dark Mode- #2D033B,#810CA8,#C147E9,#E5B8F4
+
+2. Font Style --> 'Poppins'
+
+3. Features -->
+BookMark- save posts/questions for later
+Light/Dark Mode Toggle- for switching color pallete
