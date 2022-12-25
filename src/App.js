@@ -13,13 +13,10 @@ import SignIn from "./pages/signin";
 function App() {
   return (
 <>
-<<<<<<< HEAD
+
 
 <Navbar />
 
-=======
-<Navbar />
->>>>>>> b25a2f7043a086c4204a756d44beca3de13488e8
     <BrowserRouter>
      <Routes>
         <Route exact path='/Home' element={<Home />} />
@@ -29,8 +26,9 @@ function App() {
         <Route path='/signin' element={<SignIn/>}/>
 
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> 
 
+<Hero/>
     </>
   );
 }
