@@ -5,13 +5,18 @@ import Signup from "./pages/signup/index";
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
+
 import Hero from './components/hero-section';
 import SignIn from "./pages/signin";
+
 
 function App() {
   return (
 <>
+
+
 <Navbar />
+
     <BrowserRouter>
      <Routes>
         <Route exact path='/Home' element={<Home />} />
@@ -21,8 +26,9 @@ function App() {
         <Route path='/signin' element={<SignIn/>}/>
 
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> 
 
+<Hero/>
     </>
   );
 }
