@@ -15,10 +15,11 @@ function App() {
 <>
 
 
-<Navbar />
+
 
     <BrowserRouter>
-     <Routes>
+     <Navbar />
+      <Routes>
         <Route exact path='/Home' element={<Home />} />
         <Route path='/About' element={<About />} />
         <Route path='/Contact' element={<Contact />} />
@@ -26,9 +27,10 @@ function App() {
         <Route path='/signin' element={<SignIn/>}/>
 
       </Routes>
+     <Hero/>
     </BrowserRouter> 
 
-<Hero/>
+    
     </>
   );
 }

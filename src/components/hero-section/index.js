@@ -1,4 +1,5 @@
 import image from "./forumimage.png";
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <>
@@ -13,9 +14,11 @@ export default function Hero() {
         now just one click away
       </p>
       <div className="text-center md:text-left md:mt-9 md:ml-6">
-        <button className="bg-black hover:bg-gray-700 scale-125 text-white font-bold py-2 px-4 rounded-xl pl-4">
-          Click here
-        </button>
+        <Link to='/signin'>
+          <button className="bg-black hover:bg-gray-700 scale-125 text-white font-bold py-2 px-4 rounded-xl pl-4">
+            Click here
+          </button>
+        </Link>
       </div>
     </div>
 
