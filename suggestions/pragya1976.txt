@@ -1,0 +1,3 @@
+We can add one feature which suggests user to join groups and communities of similar interest .We can add a feature of suggested communities .
+Also we can add tags on questions like question is related to which topic 
+We can also involve feature of popular tags or suggested tags so that user can directly see the questions and suggestions of topics in which he is interested 
