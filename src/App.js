@@ -1,38 +1,31 @@
 import React from "react";
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Signup from "./pages/signup/index";
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import About from './pages/About';
-import Error from './pages/Error';
+import Signup from "./pages/signup";
+import Home from './pages/home';
+import Community from './pages/community';
+import Profile from './pages/profile';
+import Heropage from './pages/heropage';
+import Error from './pages/error/index';
 import Hero from './components/hero-section';
 import SignIn from "./pages/signin";
 
 
 function App() {
   return (
-<>
-
-
-
-
+  <>
     <BrowserRouter>
-    
       <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path='/About' element={<About />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/signup' element={<Signup/>}/>
-        <Route path='/signin' element={<SignIn/>}/>
+        <Route exact path='/' element={<Heropage />} />
+        <Route path='/Home' element={<Home />} />
+        <Route path='/Community' element={<Community />} />
+        <Route path='/Profile' element={<Profile />} />
+        <Route path='/Signup' element={<Signup/>}/>
+        <Route path='/Signin' element={<SignIn/>}/>
         <Route path='*' element={<Error/>} />
-
       </Routes>
-    
-    </BrowserRouter> 
-
-    
-    </>
+    </BrowserRouter>  
+  </>
   );
 }
 

@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="text-center md:text-left md:mt-9 md:ml-6">
         <Link to='/signin'>
           <button className="bg-black hover:bg-gray-700 scale-125 text-white font-bold py-2 px-4 rounded-xl pl-4">
-            Click here
+            Get Started
           </button>
         </Link>
       </div>
