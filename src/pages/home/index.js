@@ -18,7 +18,7 @@ function Home() {
               ></input>
             </div>
             <div className="inline-block w-[calc(10%+32px)] h-[100%] relative">
-              <button className="bg-[#02C8AC] absolute w-[70%] rounded-lg text-[#FFFFFF] h-[70%] left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] ">
+              <button className="bg-[#02C8AC] hover:bg-[#05CFB3] absolute w-[70%] rounded-lg text-[#FFFFFF] h-[70%] left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] ">
                 Post
               </button>
             </div>
