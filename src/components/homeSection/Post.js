@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+// import { act } from "react-dom/test-utils";
 
 const Post = () => {
+  const [active, isActive] = useState(false);
   return (
-    <div className=" m-4 h-fit  relative shadow-[0px_4px_10px_rgba(0,0,0,0.25)] rounded-xl pl-4">
+    <div
+      onClick={() => {
+        isActive(!active);
+      }}
+      className={` ${
+        active ? "border-2 border-blue-500" : ""
+      } m-4 h-fit  relative shadow-[0px_4px_10px_rgba(0,0,0,0.25)] rounded-xl pl-4 `}
+    >
       <div className="my-4 inline-block align-top rounded-2xl h-[calc(17vw-32px)]  w-[calc(17vw-32px)] bg-blue-400"></div>
 
       <div className=" inline-block h-fit w-[calc(100%-17vw+32px)] px-4">
