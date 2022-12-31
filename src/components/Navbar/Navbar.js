@@ -6,6 +6,7 @@ import { FaConnectdevelop } from "react-icons/fa";
 import { BiMessage } from "react-icons/bi";
 export default function Navbar() {
   return (
+
     <nav className="flex w-1/1 items-center justify-around flex-wrap p-3 navbar">
       <h1
         className="font-bold text-2xl navbar_text"
@@ -50,4 +51,5 @@ export default function Navbar() {
       </div>
     </nav>
   );
+
 }
