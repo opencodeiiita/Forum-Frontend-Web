@@ -8,7 +8,7 @@ import Heropage from "./pages/heropage";
 import Error from "./pages/error/index";
 import Hero from "./components/hero-section";
 import SignIn from "./pages/signin";
-import Navbar from "./components/Navbar/Navbar";
+
 
 function App() {
   return (
