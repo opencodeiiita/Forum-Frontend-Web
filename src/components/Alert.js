@@ -1,11 +1,25 @@
-import React from 'react';
-import { Alert } from 'antd';
+import { Alert, Space } from "antd";
+import React from 'react'
 
-const AlertComp = () =>
- <Alert message="Success Text" type="success" />;
-
-
-
-
-
-export default AlertComp;
+export default function AlertComp({setSuccess}) {
+    const onClose=()=>{
+        setSuccess(false);
+    }
+  return (
+    <div>
+      <Space
+		direction="vertical"
+		style={{
+			width: "100%",
+		}}
+	>
+		<Alert
+			message="Posted Successfully"
+			type="success"
+			closable
+			onClose={onClose}
+		/>
+	</Space>
+    </div>
+  )
+}

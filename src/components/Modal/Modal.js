@@ -2,7 +2,8 @@ import React from "react";
 import '../../index.css';
 import AlertComp from "../Alert";
 
-function Modal({ setOpenModal}) {
+
+function Modal({ setOpenModal,setSuccess}) {
   return (
  
     <div className="modal h-screen w-full scale-x-110 fixed top-0  flex justify-center items-center bg-black bg-opacity-50   ">
@@ -44,10 +45,9 @@ function Modal({ setOpenModal}) {
           >
             Cancel
           </button>
-          <button  onClick={()=>{
+          <button onClick={()=>{
             setOpenModal(false);
-          
-            return(<AlertComp/>);
+            setSuccess(true);
           }} className="text-white font-bold py-2 px-5 rounded-xl bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue ml-3">
             Post
           </button>

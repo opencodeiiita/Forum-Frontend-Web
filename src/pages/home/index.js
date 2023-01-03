@@ -9,11 +9,12 @@ import AlertComp from "../../components/Alert";
 
 function Home() {
   const [modalOpen, setModalOpen] = useState(false);
+   const[success,setSuccess]=useState(false);
 
   return (
     <>
       <Navbar />
-      {!modalOpen && AlertComp}
+      {success && <AlertComp setSuccess={setSuccess}/> }
       <div className="h-[80vh] w-[90vw] max-xl:w-[100vw] relative left-[50%] -translate-x-[50%]">
         <div className=" max-md:w-[90vw] max-md:left-[5vw] leftside w-[60vw] max-xl:w-[70vw] h-[80vh] absolute left-0 ">
           <div className=" h-[100px] m-4 p-4 shadow-[0px_4px_10px_rgba(0,0,0,0.25)] rounded-lg">
@@ -36,7 +37,7 @@ function Home() {
           <Posts />
         </div>
         <RightSideBar />
-        {modalOpen && <Modal setOpenModal={setModalOpen} mask="false" /> }
+        {modalOpen && <Modal setOpenModal={setModalOpen} setSuccess={setSuccess} mask="false" /> }
       </div>
     </>
   );
