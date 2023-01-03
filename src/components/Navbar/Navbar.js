@@ -121,6 +121,18 @@ export default function Navbar() {
           class="bg-gray-100 mt-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="Type here to search ..."
         />
+        <div className="flex">
+          <div
+            className="profile w-8 h-8 rounded-full border overflow-hidden shadow-md"
+            style={{ borderRadius: "10px" }}
+          >
+            <img
+              src="https://avatars.githubusercontent.com/u/82640789?v=4"
+              alt="developer"
+            />
+          </div>
+          <h3 className="mx-4 mt-0 font-semibold ">Neeraj Coubisa</h3>
+        </div>
       </div>
     </nav>
   );
