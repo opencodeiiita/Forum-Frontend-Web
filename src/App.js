@@ -9,6 +9,9 @@ import Heropage from './pages/heropage';
 import Error from './pages/error/index';
 import Hero from './components/hero-section';
 import SignIn from "./pages/signin";
+import Dashboard from "./pages/dashboard/dashboard";
+
+
 
 
 function App() {
@@ -22,6 +25,7 @@ function App() {
         <Route path='/Profile' element={<Profile />} />
         <Route path='/Signup' element={<Signup/>}/>
         <Route path='/Signin' element={<SignIn/>}/>
+        <Route path='/Dashboard' element={<Dashboard />}/>
         <Route path='*' element={<Error/>} />
       </Routes>
     </BrowserRouter>  
