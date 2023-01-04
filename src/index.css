@@ -25,3 +25,7 @@
   -ms-overflow-style: none; /* IE and Edge */
 
 }
+
+.ant-modal-mask{
+  background-color : rgba(0,0,0,0.8) !important;
+  }
