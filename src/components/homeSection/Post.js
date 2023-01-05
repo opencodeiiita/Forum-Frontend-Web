@@ -28,6 +28,10 @@ const Post = () => {
     } else {
       setLikeCount(likeCount + 1);
       setLike(true);
+      if (dislike) {
+        setDislike(false);
+        setDislikeCount(dislikeCount - 1);
+      }
     }
   };
   const toggleDislike = (e) => {
@@ -38,6 +42,10 @@ const Post = () => {
     } else {
       setDislikeCount(dislikeCount + 1);
       setDislike(true);
+      if (like) {
+        setLike(false);
+        setLikeCount(likeCount - 1);
+      }
     }
   };
   return (
