@@ -1,11 +1,4 @@
 import React, { useState } from "react";
-// import { act } from "react-dom/test-utils";
-import {
-  FaRegThumbsUp,
-  FaRegThumbsDown,
-  FaThumbsUp,
-  FaThumbsDown,
-} from "react-icons/fa";
 import { BiUpvote, BiDownvote } from "react-icons/bi";
 import { GoArrowUp, GoArrowDown } from "react-icons/go";
 
