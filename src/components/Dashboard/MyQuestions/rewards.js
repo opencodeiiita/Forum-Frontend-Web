@@ -16,7 +16,7 @@ const Rewards = () => {
         <section className="flex-row flex-wrap max-w-xl my-[25px] mx-[36px] ">
           <div className=" flex flex-1 justify-between items-center flex-row  font-['Poppins'] p-[10px] ">
             <h2 className={toggleClicked === 1 ? "text-[20px] cursor-pointer font-medium text-[#02C8AC]  underline decoration-4 underline-offset-[6px] mx-[70px] my-[20px] "
-              : "text-[20px] font-medium opacity-[50%] cursor-pointer  decoration-4 underline-offset-[6px] mx-[70px] my-[20px] "}
+              : "text-[20px] font-medium opacity-[50%] cursor-pointer npm decoration-4 underline-offset-[6px] mx-[70px] my-[20px] "}
               onClick={() => toggleTab(1)}>
               Rewards
             </h2>
