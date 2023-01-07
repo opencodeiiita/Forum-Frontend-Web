@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import Profile from "../../components/Dashboard/profile";
-import Rewards from "../../components/Dashboard/rewards";
+import Profile from "../../components/Dashboard/MyQuestions/profile";
+import Rewards from "../../components/Dashboard/MyQuestions/rewards";
 import { useState, useEffect } from "react";
-import LeftSection from "../../components/Dashboard/leftsection";
+import LeftSection from "../../components/Dashboard/MyQuestions/leftsection";
 
 export default function Dashboard() {
   function useWindowSize() {

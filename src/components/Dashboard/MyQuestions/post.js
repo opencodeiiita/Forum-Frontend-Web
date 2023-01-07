@@ -21,7 +21,7 @@ const Post = () => {
      
      
      <div className=" flex flex-1 items-end justify-between"> 
-     <button className="inline-block bg-[#02C8AC] h-[30px] w-[100px] rounded-[5px] px-3 py-1 text-[14px] font-semibold bottom-[0px] text-[#FFFFFF] mt-[10px] ml-[22px] ">
+     <button className="inline-block bg-[#02C8AC] h-[30px] w-[100px] rounded-[5px] px-3 py-1 text-[14px] font-medium bottom-[0px] text-[#FFFFFF] mt-[10px] ml-[22px] ">
       View
      </button>
      <div className="inline-block">

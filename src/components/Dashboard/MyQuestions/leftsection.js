@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Post from "./post";
 import Posts from "./posts";
-
+import Answers from "./MyAnswers/answers";
+import Communities from "./MyCommunities/communities";
 
 
 export default function LeftSection() {
@@ -38,8 +38,8 @@ export default function LeftSection() {
                 </section>
 
                 {(toggleClicked === 1 ? <Posts /> : null)}
-                {(toggleClicked === 2 ? <Post /> : null)}
-                {(toggleClicked === 3 ? <Posts /> : null)}
+                {(toggleClicked === 2 ? <Answers /> : null)}
+                {(toggleClicked === 3 ? <Communities /> : null)}
 
             </div>
         </>
