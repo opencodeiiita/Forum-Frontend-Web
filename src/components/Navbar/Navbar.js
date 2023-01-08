@@ -63,9 +63,9 @@ export default function Navbar() {
               Chat
             </h5>
           </Link>
-          <Link to="/Profile">
+          <Link to="/Dashboard">
             <h5 className=" py-4 relative left-[-20px] pl-10 hover:bg-[#02C8AC] hover:text-[#FFFFFF] font-['Poppins'] w-full text-4xl mt-4 hover:translate-x-5 transition-all text-[#02C8AC]">
-              Profile
+              Dashboard
             </h5>
           </Link>
           <h5 className=" py-4 relative left-[-20px] pl-10 hover:bg-[#02C8AC] hover:text-[#FFFFFF] font-['Poppins'] w-full text-4xl mt-4 hover:translate-x-5 transition-all text-[#02C8AC]">
