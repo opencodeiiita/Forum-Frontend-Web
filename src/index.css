@@ -3,6 +3,14 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
+.ant-btn svg {
+  height: 20px;
+  width: 20px;
+  padding-bottom: 2px;
+}
+.ant-drawer-body {
+  padding: 0 !important;
+}
 .navbar_text {
   font-family: "Poppins";
   font-style: normal;
@@ -57,6 +65,6 @@
   }
 }
 
-.ant-modal-mask{
-  background-color : rgba(0,0,0,0.8) !important;
-  }
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
