@@ -117,7 +117,7 @@ export default function Navbar() {
             <BiMessage fontSize="20px" />
           </Link>
         </div>
-        <Link to="/Profile" className="flex">
+        <Link to="/Dashboard" className="flex">
           <div
             className="profile w-8 h-8 border overflow-hidden shadow-md"
             style={{ borderRadius: "10px" }}
