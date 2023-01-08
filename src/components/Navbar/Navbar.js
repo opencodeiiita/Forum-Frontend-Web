@@ -6,6 +6,8 @@ import { FaConnectdevelop } from "react-icons/fa";
 import { BiMessage } from "react-icons/bi";
 import { Input, Button, Drawer } from "antd";
 import { AiOutlineMenu } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
+import { IconContext } from "react-icons";
 export default function Navbar() {
   const location = useLocation();
   console.log(location.pathname);
@@ -28,12 +30,14 @@ export default function Navbar() {
         >
           <AiOutlineMenu fill="#02C8AC" />
         </Button>
-        <h1
-          className=" font-bold text-2xl navbar_text"
-          style={{ color: "#02C8AC" }}
-        >
-          Forum
-        </h1>
+        <Link to="/">
+          <h1
+            className=" font-bold text-2xl navbar_text"
+            style={{ color: "#02C8AC" }}
+          >
+            Forum
+          </h1>
+        </Link>
         <Input.Search
           placeholder="Type here to search ..."
           id="search"
@@ -42,13 +46,18 @@ export default function Navbar() {
         <Drawer
           // title="Basic Drawer"
           placement={"left"}
-          closable={false}
           onClose={onClose}
           open={open}
           key={"left"}
+          closable={false}
         >
+          <GrClose
+            className="font-bold h-6 w-6 absolute right-6 top-6"
+            onClick={onClose}
+          />
+
           <Link to="/Home">
-            <h5 className=" py-4 relative left-[-20px] pl-10 hover:bg-[#02C8AC] hover:text-[#FFFFFF] font-['Poppins'] w-full text-4xl mt-4 hover:translate-x-5 transition-all text-[#02C8AC]">
+            <h5 className="mt-16 py-4 relative left-[-20px] pl-10 hover:bg-[#02C8AC] hover:text-[#FFFFFF] font-['Poppins'] w-full text-4xl hover:translate-x-5 transition-all text-[#02C8AC]">
               Home
             </h5>
           </Link>
