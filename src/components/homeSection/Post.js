@@ -8,7 +8,7 @@ import { BsFillChatLeftFill } from "react-icons/bs";
 
 
 
-const Post = (props) => {
+const Post = () => {
   const [active, isActive] = useState(false);
   const [like, setLike] = useState(false);
   const [dislike, setDislike] = useState(false);
