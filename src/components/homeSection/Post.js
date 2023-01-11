@@ -4,7 +4,11 @@ import { GoArrowUp, GoArrowDown } from "react-icons/go";
 
 import { BsFillChatLeftFill } from "react-icons/bs";
 
-const Post = () => {
+
+
+
+
+const Post = (props) => {
   const [active, isActive] = useState(false);
   const [like, setLike] = useState(false);
   const [dislike, setDislike] = useState(false);
@@ -12,6 +16,13 @@ const Post = () => {
   const [dislikeCount, setDislikeCount] = useState(0);
   const [animation, setAnimation] = useState(false);
   const [animation2, setAnimation2] = useState(false);
+  const [activePostId, setActivePostId] = useState(null);
+  
+
+  const handlePostClick = (postId) => {
+    setActivePostId(postId);
+    setTimeout(() => setActivePostId(null), 200);
+  };
 
   const toggleLike = (e) => {
     e.stopPropagation();
@@ -43,13 +54,13 @@ const Post = () => {
   };
   return (
     <div
-      onClick={() => {
-        isActive(!active);
-      }}
-      className={` ${
-        active ? "border-2 border-blue-500" : ""
-      } m-4 h-fit  relative shadow-[0px_4px_10px_rgba(0,0,0,0.25)] rounded-xl pl-4 pb-4`}
-    >
+          key={2}
+          onClick={() => handlePostClick(2)}
+          className={` 
+          ${activePostId === 2 ? "border-2 border-blue-500" : ""
+          } ml-[19px] mt-[20px] h-fit w-[93%] relative shadow-[0px_4px_10px_rgba(0,0,0,0.25)] rounded-xl p-2`}
+        >
+    
       <div className="mt-4 inline-block align-top rounded-2xl h-[calc(17vw-32px)]  w-[calc(17vw-32px)] bg-blue-400"></div>
 
       <div className=" inline-block h-fit w-[calc(100%-17vw+32px)] px-4">
@@ -75,7 +86,7 @@ const Post = () => {
             an anonymous group of people or developers who were widely referred
             to.........
           </div>
-          <div className="mt-4 h-fit  relative">
+          <div className="mt-4 h-fit   relative">
             <div className="bg-green-400 h-12 w-12 rounded-full  mt-1 mx-2 inline-block"></div>
             <div className="inline-block w-[calc(100%-192px)]  h-[100%] absolute">
               <div className="h-[50%] text-xs p-2 pb-0 text-[#777777]">
