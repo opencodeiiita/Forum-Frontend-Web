@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { BiUpvote, BiDownvote } from "react-icons/bi";
-import { MdModeComment } from "react-icons/md";
+
 
 
 const Community = () => {
@@ -36,7 +35,7 @@ const Community = () => {
                     <div className=" flex flex-1 items-end justify-between">
                         <button className="inline-block bg-[#02C8AC] h-[30px] w-[60px] rounded-[5px] px-3 py-1 text-[14px] font-medium bottom-[0px] text-[#FFFFFF] mt-[10px] ml-[22px] ">
                             View
-                        </button>
+                        </button>   
                         <div className="inline-block">
                             <div className=" inline-block  text-[#777777] mx-[20px] text-[12px] ">
                                 Joined 2 days ago.
