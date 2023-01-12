@@ -1,6 +1,6 @@
 import { Button } from "antd";
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import { GrClose } from "react-icons/gr";
 
 
 const Rewards = () => {
@@ -11,7 +11,12 @@ const Rewards = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   }
-
+  const deleteSkill = (index)=>{
+    let tempSkills = skills;
+    tempSkills.splice(index,1);
+    setSkills([...tempSkills]);
+  }
+  
   return (
     <div className="flex flex-row my-[20px] " >
       <div className=" bg-white h-fit w-fit flex flex-col shadow-[0px_4px_10px_rgba(0,0,0,0.25)] rounded-[15px] pb-0">
@@ -46,7 +51,7 @@ const Rewards = () => {
                     if(skill !== ''){
                       let tempSkills = skills;
                       tempSkills.push(skill);
-                      setSkills(tempSkills)
+                      setSkills([...tempSkills])
                       setSkill(''); 
                     }
                   }}
@@ -55,11 +60,16 @@ const Rewards = () => {
               </div>
               <ul className=" py-2 px-8 text-lg list-disc text-[#777777]">
               {
-                skills.map((el)=>{
+                skills.map((el,index)=>{
                   return (
-                    <li>
-                      {el}
-                    </li>
+                    <>
+                      <li className="">
+                        {el}
+                        <GrClose onClick={e=>deleteSkill(index)} className=" h-4 w-4 inline-block relative bottom-[2px] ml-4" />
+                      </li>
+                      
+                    </>
+                    
                   )
                 })
               }
