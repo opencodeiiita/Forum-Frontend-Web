@@ -68,3 +68,12 @@
 .ant-modal-mask {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
+
+.ant-modal .ant-btn-primary {
+  background-color: #02c8ac !important;
+
+}
+.ant-modal:hover .ant-btn-primary:hover {
+  background-color:#00b89c !important;
+  
+}
