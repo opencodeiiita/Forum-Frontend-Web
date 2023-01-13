@@ -6,13 +6,20 @@ import { UploadOutlined } from '@ant-design/icons';
 import YourCommunities from "../../components/Community/yourcommunities";
 function Community() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [communityName,setCommunityName] = useState('');
+  const [description,setDescription] = useState('');
+  const [file,setFile] = useState(null);
   const showModal = () => {
     setIsModalOpen(true);
   };
   const handleOk = () => {
+    setCommunityName('')
+    setDescription('')
     setIsModalOpen(false);
   };
   const handleCancel = () => {
+    setCommunityName('')
+    setDescription('')
     setIsModalOpen(false);
   };
   const props = {
@@ -35,12 +42,12 @@ function Community() {
   return (
     <>
       <Navbar />
-      <Modal title="Create a Community" className="font-semibold" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal destroyOnClose={true} title="Create a Community" className="font-semibold" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
 
-        <h5 className="mt-8 font-medium font-['Poppins']">Enter Community Name:</h5>
-        <Input placeholder="Enter Name"  className="font-['Poppins'] mb-2 font-normal"/>
-        <h5 className="mt-2 font-normal font-['Poppins']">Enter Description:</h5>
-        <Input placeholder="Description" className="font-['Poppins'] mb-2 font-normal" />
+        <h5 className="mt-8 font-medium font-['Poppins']">Community Name:</h5>
+        <Input onChange={(e)=>setCommunityName(e.target.value)} value={communityName} placeholder="Enter Name"  className="font-['Poppins'] mb-2 font-normal"/>
+        <h5 className="mt-2 font-normal font-['Poppins']">Description:</h5>
+        <Input onChange={(e)=>setDescription(e.target.value)} value={description} placeholder="Enter Description" className="font-['Poppins'] mb-2 font-normal" />
         <Upload {...props}>
         <h5 className="mt-2 font-medium font-['Poppins']">Community Logo:</h5>
           <Button className="my-2 font-normal font-['Poppins']" icon={<UploadOutlined />}>Click to Upload</Button>
