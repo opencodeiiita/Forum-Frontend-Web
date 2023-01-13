@@ -1,0 +1,7 @@
+first->    Add emojis of like,hearts etc. for giving reactions to a doubt or post of some other user,
+           i would like to recommend the addition '+' icon to add in with the major buttons,which is to be 
+           used by people having the same doubt .
+second->   There should be an option to bookmark or save the the posts or doubts asked in the forum, so that the user can 
+            check after sometime when the doubt has been solved.
+third->    you can add color palatte #cdffff or #efc1ff or #bfe092 or for if want to dark bakgrounds we can use #002b3f.
+fourth->   Add a filter button to filter out doubts related to the keywords what the user wants or types.
